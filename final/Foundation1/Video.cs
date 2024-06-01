@@ -13,7 +13,7 @@ public class Video
         _comments = new List<Comment>();
     }
 
-    public int GetComments()
+    public int GetCommentsCount()
     {
         return _comments.Count;
     }
@@ -24,7 +24,7 @@ public class Video
     }
     public void DisplayAll(Video v)
     {
-        Console.WriteLine($"Title: {_title} | Author: {_author} | Length: {_length}secs | Comments: {v.GetComments()}");
+        Console.WriteLine($"Title: {_title} | Author: {_author} | Length: {_length}secs | Comments: {v.GetCommentsCount()}");
         Console.WriteLine();
 
         foreach (Comment comment in _comments)
